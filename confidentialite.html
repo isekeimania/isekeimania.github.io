@@ -13,13 +13,14 @@
     .doux { color: var(--doux); }
     a { color: var(--accent); }
     hr { border: 0; border-top: 1px solid #262e3a; margin: 40px 0; }
+    @media print { body { background: #fff; color: #111; } .doux { color: #555; } a { color: #1a4fa0; } hr { border-top-color: #ccc; } }
   </style>
 </head>
 <body>
 <main>
   <p><a href="index.html">← Atelier Isekeimania</a></p>
   <h1>Règles de confidentialité</h1>
-  <p class="doux">Dernière mise à jour : 12 octobre 2026</p>
+  <p class="doux">Dernière mise à jour : 12 octobre 2026 (miniatures et playlists)</p>
 
   <p>L'Atelier Isekeimania est un logiciel privé, installé sur l'ordinateur du créateur de la chaîne YouTube
     Isekeimania et utilisé par son seul créateur. Il n'a pas d'autres utilisateurs.</p>
@@ -30,7 +31,8 @@
   <ul>
     <li>lire le nom et l'identifiant de la chaîne connectée, afin de vérifier qu'il s'agit bien de la chaîne Isekeimania ;</li>
     <li>envoyer les vidéos de la chaîne, avec leur titre, leur description, leur traduction anglaise et leur date de publication programmée ;</li>
-    <li>ajouter les fichiers de sous-titres de ces vidéos.</li>
+    <li>ajouter la miniature et les fichiers de sous-titres de ces vidéos ;</li>
+    <li>ranger ces vidéos dans les playlists de la chaîne.</li>
   </ul>
   <p>Il ne lit aucune donnée d'un autre utilisateur, ni les abonnés, ni les commentaires, ni les statistiques de la chaîne.</p>
 
@@ -38,6 +40,18 @@
   <p>Le jeton d'accès délivré par Google est conservé uniquement sur l'ordinateur du créateur, dans un fichier local.
     Les seules informations gardées sont le nom de la chaîne et les identifiants des vidéos envoyées. Aucune donnée
     n'est transmise, vendue ou partagée avec un tiers : l'Atelier ne communique qu'avec les serveurs de Google et de YouTube.</p>
+
+  <h2>Conservation et suppression des données</h2>
+  <ul>
+    <li><strong>Jeton d'accès</strong> : conservé sur l'ordinateur du créateur jusqu'à la déconnexion ou la révocation ;
+      le bouton « Se déconnecter » de l'Atelier le supprime immédiatement.</li>
+    <li><strong>Nom de la chaîne</strong> : relu auprès de YouTube à chaque envoi, pour vérifier le compte connecté ;
+      supprimé avec le jeton.</li>
+    <li><strong>Identifiants des vidéos envoyées</strong> : gardés dans le dossier du projet de la vidéo, pour afficher
+      son lien ; supprimés avec ce dossier.</li>
+  </ul>
+  <p>Aucune autre donnée YouTube n'est conservée. Toute demande de suppression peut être adressée à
+    isekeimania@gmail.com ; elle est traitée sous 7 jours.</p>
 
   <h2>Révoquer l'accès</h2>
   <p>L'accès peut être retiré à tout moment depuis la page
@@ -62,12 +76,18 @@
     <h2>Data accessed</h2>
     <p>With the account holder's explicit consent, given on Google's sign-in page, the tool uses YouTube API Services to:
       read the connected channel's name and ID (to check that it is the Isekeimania channel); upload the channel's own
-      videos with their title, description, English localization and scheduled publish time; and add caption files to
-      those videos. It does not read any other user's data, nor the channel's subscribers, comments or analytics.</p>
+      videos with their title, description, English localization and scheduled publish time; add thumbnails and caption files to
+      those videos; and add them to the channel's own playlists. It does not read any other user's data, nor the channel's subscribers, comments or analytics.</p>
     <h2>Storage and sharing</h2>
     <p>The access token issued by Google is stored only on the creator's computer, in a local file. The only information
       kept is the channel name and the IDs of uploaded videos. No data is transmitted, sold or shared with any third
       party: the tool only communicates with Google and YouTube servers.</p>
+    <h2>Data retention and deletion</h2>
+    <p><strong>Access token</strong>: kept on the creator's computer until disconnection or revocation; the tool's
+      “Disconnect” button deletes it immediately. <strong>Channel name</strong>: re-read from YouTube at each upload to
+      check the connected account; deleted with the token. <strong>IDs of uploaded videos</strong>: kept in the video's
+      project folder to show its link; deleted with that folder. No other YouTube data is kept. Any deletion request can
+      be sent to isekeimania@gmail.com and is handled within 7 days.</p>
     <h2>Revoking access</h2>
     <p>Access can be revoked at any time from the
       <a href="https://security.google.com/settings/security/permissions">Google Account permissions page</a>.</p>
